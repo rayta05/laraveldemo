@@ -1,95 +1,57 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
+<!Doctype html>
+<html>
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Laravel</title>
-
-    <!-- Fonts -->
-    <link href="http://fonts.useso.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-    <!-- Styles -->
-    <style>
-        html, body {
-            background-color: #fff;
-            color: #636b6f;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 100;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .full-height {
-            height: 100vh;
-        }
-
-        .flex-center {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-        }
-
-        .position-ref {
-            position: relative;
-        }
-
-        .top-right {
-            position: absolute;
-            right: 10px;
-            top: 18px;
-        }
-
-        .content {
-            text-align: center;
-        }
-
-        .title {
-            font-size: 84px;
-        }
-
-        .links > a {
-            color: #636b6f;
-            padding: 0 25px;
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        .m-b-md {
-            margin-bottom: 30px;
-        }
-    </style>
+    <title>Success</title>
+    <link href="/public/static/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="flex-center position-ref full-height">
-    @if (Route::has('login'))
-        <div class="top-right links">
-            @auth
-                <a href="{{ url('/home') }}">Home</a>
-            @else
-                <a href="{{ route('login') }}">Login</a>
-                <a href="{{ route('register') }}">Register</a>
-            @endauth
-        </div>
-    @endif
-
+<div class="main-container">
+    <div class="cloud-image">
+        <img src="/public/static/img/successCloudNew.svg" />
+    </div>
     <div class="content">
-        <div class="title m-b-md">
-            Laravel
+        <div class="tweet-container">
+            <a href="https://console.huaweicloud.com/servicestage/">
+                <img src="/public/static/img/tweetThis.svg" />
+            </a>
         </div>
-
-        <div class="links">
-            <a href="https://laravel.com/docs">Documentation</a>
-            <a href="https://laracasts.com">Laracasts</a>
-            <a href="https://laravel-news.com">News</a>
-            <a href="https://forge.laravel.com">Forge</a>
-            <a href="https://github.com/laravel/laravel">GitHub</a>
+        <div class="content-body">
+            <div class="success-text">Success!</div>
+            <div class="description line-1"> Cloud DevOps Project has been successfully setup</div>
+            <div class="description line-2"> Your Php Laravel app is up and running on Cloud</div>
+            <div class="next-steps-container">
+                <div class="next-steps-header">Next up</div>
+                <div class="next-steps-body">
+                    <div class="step">
+                        <div class="step-icon">
+                            <img src="/public/static/img/cloneWhite.svg">
+                        </div>
+                        <div class="step-text"><a href="https://console.huaweicloud.com/servicestage/">Clone your code repository and start developing your application on IDE of your choice</a></div>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">
+                            <img src="/public/static/img/deployWhite.svg">
+                        </div>
+                        <div class="step-text"><a href="https://console.huaweicloud.com/servicestage/">View your CI/CD pipeline on Visual Studio Team Services and customize it as per your needs</a></div>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">
+                            <img src="/public/static/img/stackWhite.svg">
+                        </div>
+                        <div class="step-text"><a href="https://console.huaweicloud.com/servicestage/">View your service stack in the Cloud Portal</a></div>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">
+                            <img src="/public/static/img/lightbulbWhite.svg">
+                        </div>
+                        <div class="step-text"><a href="https://console.huaweicloud.com/servicestage/">Learn more about all you can do with Cloud projects by visiting the documentation</a></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 </body>
+
 </html>
