@@ -17,6 +17,6 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:api');
 
-Route::get('/laravel', function () {
+Route::get('/lara', function () {
     return view('laravel');
 });
